@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: feign-hystrix
+  cloud:
+    openfeign:
+      circuitbreaker:
+        enabled: true
+
+server:
+  port: 4002
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1001/eureka/
+
