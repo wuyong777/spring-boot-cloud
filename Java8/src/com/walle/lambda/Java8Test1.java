@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-public class Java8Tester {
+public class Java8Test1 {
 
         public static void main(String args[]){
 
@@ -23,7 +23,7 @@ public class Java8Tester {
             names2.add("Baidu ");
             names2.add("Sina ");
 
-            Java8Tester tester = new Java8Tester();
+            Java8Test1 tester = new Java8Test1();
             System.out.println("使用 Java 7 语法: ");
 
             tester.sortUsingJava7(names1);
