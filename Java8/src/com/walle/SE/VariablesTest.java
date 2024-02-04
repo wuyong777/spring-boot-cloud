@@ -25,3 +25,9 @@ public class VariablesTest {
         v.method(20);
     }
 }
+/*
+成员变量: 10
+静态变量: 20
+参数变量: 20
+局部变量: 10
+ */

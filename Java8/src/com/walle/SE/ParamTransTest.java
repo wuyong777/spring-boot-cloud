@@ -24,5 +24,10 @@ public class ParamTransTest {
         System.out.println("x = " + x + ", y = " + y); // 输出x和y的值
     }
 }
-
+/*
+a = 10, b = 20
+x = 10, y = 20
+x = 20, y = 10
+a = 10, b = 20
+ */
 

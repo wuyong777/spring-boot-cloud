@@ -13,3 +13,8 @@ public class StaticFinalVariableTest {
         System.out.println("Database URL: " + StaticFinalVariableTest.DATABASE_URL);
     }
 }
+/*
+Application name: MyApp
+Application version: 1.0.0
+Database URL: jdbc:mysql://localhost:3306/mydb
+ */

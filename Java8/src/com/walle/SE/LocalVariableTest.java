@@ -14,3 +14,7 @@ public class LocalVariableTest {
              System.out.println("c = " + c);*/
     }
 }
+/*
+a = 10
+b = 20
+ */

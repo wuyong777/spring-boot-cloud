@@ -23,3 +23,10 @@ public class EnumTest {
         //System.out.println(Color.valueOf("WHITE"));
     }
 }
+
+/*
+RED at index 0
+GREEN at index 1
+BLUE at index 2
+RED
+ */

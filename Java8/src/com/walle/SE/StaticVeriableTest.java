@@ -20,3 +20,6 @@ public class StaticVeriableTest {
         System.out.println("目前为止创建的对象数: " + StaticVeriableTest.getCount());
     }
 }
+/*
+目前为止创建的对象数: 4
+ */

@@ -36,3 +36,24 @@ public class MapTest {
         }
     }
 }
+/*
+通过Map.keySet遍历key和value：
+key= 1 and value= value1
+key= 2 and value= value2
+key= 3 and value= value3
+-----------------------
+通过Map.entrySet使用iterator遍历key和value：
+key= 1 and value= value1
+key= 2 and value= value2
+key= 3 and value= value3
+-----------------------
+通过Map.entrySet遍历key和value
+key= 1 and value= value1
+key= 2 and value= value2
+key= 3 and value= value3
+-----------------------
+通过Map.values()遍历所有的value，但不能遍历key
+value= value1
+value= value2
+value= value3
+ */
