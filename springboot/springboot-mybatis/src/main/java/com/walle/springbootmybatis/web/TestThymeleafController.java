@@ -3,12 +3,15 @@ package com.walle.springbootmybatis.web;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class TestThymeleafController {
-    @GetMapping("/")
-    public String index(ModelMap map) {
-        map.addAttribute("message", "hi thymeleaf");
-        return "index";
+    @GetMapping("/index")
+    public ModelAndView index() {
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("index");
+        modelAndView.addObject("message","hello springboot and thymeleaf!");
+        return modelAndView;
     }
 }
