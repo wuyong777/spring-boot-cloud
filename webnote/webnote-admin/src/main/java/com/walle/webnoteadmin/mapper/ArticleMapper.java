@@ -11,11 +11,7 @@ public interface ArticleMapper {
 
     @Select("select * from t_article")
     @Results({
-            @Result(property = "id", column = "id"),
-            @Result(property = "createTime", column = "create_time"),
-            @Result(property = "updateTime", column = "update_time"),
-            @Result(property = "title", column = "title"),
-            @Result(property = "content", column = "content"),
+            @Result(property = "id",column = "id"),
             @Result(property = "category",javaType = Category.class,column = "category_id",
             one = @One(select = "com.walle.webnoteadmin.mapper.CategoryMapper.getCategoryById")),
             @Result(property = "tags",javaType = List.class,column = "id",

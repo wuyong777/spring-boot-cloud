@@ -9,10 +9,7 @@ import java.util.List;
 public interface CategoryMapper {
     @Select("select * from t_category")
     @Results({
-            @Result(property = "id", column = "id"),
-            @Result(property = "createTime", column = "create_time"),
-            @Result(property = "updateTime", column = "update_time"),
-            @Result(property = "name", column = "name"),
+            @Result(property = "id",column = "id"),
             @Result(property = "articles",javaType = List.class,column = "id",
             many = @Many(select = "com.walle.webnoteadmin.mapper.ArticleMapper.getArticlesByCid"))
     })

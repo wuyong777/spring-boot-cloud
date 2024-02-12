@@ -25,3 +25,7 @@ logging:
   level:
     root: info
     com.walle.webnoteadmin.mapper: trace
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true

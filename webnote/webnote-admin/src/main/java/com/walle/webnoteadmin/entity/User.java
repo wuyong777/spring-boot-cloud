@@ -4,10 +4,9 @@ import com.baomidou.mybatisplus.annotation.TableName;
 import com.walle.webnoteadmin.common.BaseEntity;
 import lombok.Data;
 
-import java.util.List;
-
 @Data
-public class Tag extends BaseEntity {
-    private String name;
-    private List<Article> articles;
+public class User extends BaseEntity {
+    private String username;
+    private String password;
+    private UserInfo userInfo;
 }

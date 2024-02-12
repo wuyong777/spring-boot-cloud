@@ -1,9 +1,8 @@
 package com.walle.webnoteadmin.mapper;
 
-import com.walle.webnoteadmin.entity.Article;
-import com.walle.webnoteadmin.entity.Category;
 import com.walle.webnoteadmin.entity.Tag;
 import org.apache.ibatis.annotations.*;
+
 
 import java.util.List;
 
@@ -11,9 +10,7 @@ import java.util.List;
 public interface TagMapper {
     @Select("select * from t_tag")
     @Results({
-            @Result(property = "id", column = "id"),
-            @Result(property = "createTime", column = "create_time"),
-            @Result(property = "updateTime", column = "update_time"),
+            @Result(property = "id",column = "id"),
             @Result(property = "articles",javaType = List.class,column = "id",
             many = @Many(select = "com.walle.webnoteadmin.mapper.ArticleMapper.getArticlesByTid"))
     })
