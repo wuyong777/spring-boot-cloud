@@ -11,8 +11,8 @@ public interface UserMapper {
     @Select("select * from t_user")
     @Results({
             @Result(property = "id",column = "id"),
-            /*@Result(property = "userInfo",javaType = UserInfo.class,column = "id",
-            one = @One(select = "com.walle.webnoteadmin.mapper.UserInfoMapper.findUserInfoByUid"))*/
+            @Result(property = "userInfo",javaType = UserInfo.class,column = "id",
+            one = @One(select = "com.walle.webnoteadmin.mapper.UserInfoMapper.findUserInfoByUid"))
     })
     List<User> findAllUser();
 }
