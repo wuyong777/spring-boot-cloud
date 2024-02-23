@@ -3,6 +3,7 @@ package com.walle.webnoteadmin.mapper;
 import com.walle.webnoteadmin.entity.User;
 import com.walle.webnoteadmin.entity.UserInfo;
 import org.apache.ibatis.annotations.*;
+import org.springframework.cache.annotation.Cacheable;
 
 import java.util.List;
 
@@ -14,5 +15,6 @@ public interface UserMapper {
             @Result(property = "userInfo",javaType = UserInfo.class,column = "id",
             one = @One(select = "com.walle.webnoteadmin.mapper.UserInfoMapper.findUserInfoByUid"))
     })
+    @Cacheable(value = "userAll")
     List<User> findAllUser();
 }

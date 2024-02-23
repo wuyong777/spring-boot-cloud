@@ -1,7 +1,9 @@
 package com.walle.SE;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class HelloWorld {
     public static void main(String[] args){
@@ -21,6 +23,16 @@ public class HelloWorld {
 
             }
         }
+       Map<Object, Object> h = new HashMap<>();
+        h.put(1,"aa");
+        h.put(2,"bb");
+        h.put(3,"cc");
+        for (Map.Entry<Object, Object> he : h.entrySet()) {
+            System.out.println(he.getKey());
+            System.out.println(he.getValue());
+
+        }
+
 
     }
 }
