@@ -1,39 +1,47 @@
+# 服务器配置
 server:
   port: 8080
 
-
+# Spring框架配置
 spring:
+  # 数据源配置
   datasource:
-    url: jdbc:mysql://localhost:3306/webnote
-    username: root
-    password: root
-    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/webnote # 数据库连接URL
+    username: root # 数据库用户名
+    password: root # 数据库密码
+    driver-class-name: com.mysql.cj.jdbc.Driver # 数据库驱动类名
+  # 开发工具配置
   devtools:
     restart:
-      enabled: false
+      enabled: false # 是否启用热重启
+  # 缓存配置
   cache:
-    type: redis
+    type: redis # 缓存类型为Redis
+  # 数据相关配置
   data:
     redis:
-      host: localhost
-      port: 6379
+      host: localhost # Redis主机地址
+      port: 6379 # Redis端口号
 
-
-
+# SpringDoc配置
 springdoc:
   api-docs:
-    enabled: true
-    path: /api-docs
+    enabled: true # 是否启用API文档
+    path: /api-docs # API文档路径
   swagger-ui:
-    enabled: true
-    path: /swagger-ui
+    enabled: true # 是否启用Swagger UI
+    path: /swagger-ui # Swagger UI路径
 
+# 日志配置
 logging:
   level:
-    root: info
-    com.walle.webnoteadmin.mapper: trace
+    root: info # 根日志记录器的级别
+    com.walle.webnoteadmin.mapper: trace # 指定包或类的日志级别
+  file:
+    name: webnote.log # 日志文件名
 
+# MyBatis配置
 mybatis:
   configuration:
-    map-underscore-to-camel-case: true
-    cache-enabled: true
+    map-underscore-to-camel-case: true # 是否将下划线映射到驼峰命名
+    cache-enabled: true # 是否启用缓存
