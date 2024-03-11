@@ -1,6 +1,6 @@
 # 服务器配置
 server:
-  port: 8080
+  port: 80
 
 # Spring框架配置
 spring:
@@ -37,8 +37,6 @@ logging:
   level:
     root: info # 根日志记录器的级别
     com.walle.webnoteadmin.mapper: trace # 指定包或类的日志级别
-  file:
-    name: webnote.log # 日志文件名
 
 # MyBatis配置
 mybatis:
