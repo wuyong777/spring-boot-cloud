@@ -1,1 +1,1 @@
-spring study log
+spring study log.
