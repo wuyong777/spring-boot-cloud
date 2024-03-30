@@ -1,4 +1,4 @@
-package com.walle.designPattern.singleton;
+package com.walle.designPattern.c.singleton;
 
 /**
  * 饿汉式（静态成员变量初始化）：

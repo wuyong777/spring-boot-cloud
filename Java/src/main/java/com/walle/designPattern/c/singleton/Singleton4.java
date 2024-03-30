@@ -1,4 +1,4 @@
-package com.walle.designPattern.singleton;
+package com.walle.designPattern.c.singleton;
 
 /**
  * 双检锁/双重检查锁定（DCL，线程安全）：

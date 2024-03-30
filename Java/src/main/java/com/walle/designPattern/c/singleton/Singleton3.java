@@ -1,4 +1,4 @@
-package com.walle.designPattern.singleton;
+package com.walle.designPattern.c.singleton;
 
 /**
  * 懒汉式（线程安全，同步方法）：
