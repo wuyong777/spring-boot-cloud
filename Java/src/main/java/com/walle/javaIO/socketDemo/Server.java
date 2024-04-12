@@ -1,4 +1,4 @@
-package com.walle.javaIO;
+package com.walle.javaIO.socketDemo;
 
 import java.io.BufferedReader;
 import java.io.IOException;
